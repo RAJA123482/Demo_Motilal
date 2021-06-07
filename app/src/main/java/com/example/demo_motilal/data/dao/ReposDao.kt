@@ -5,7 +5,6 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.example.demo_motilal.data.models.Repos
-import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface ReposDao {

@@ -1,13 +1,11 @@
 package com.example.demo_motilal.ui
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
 import com.example.demo_motilal.R
-import com.example.demo_motilal.service.RepoSyncService
 
 class MainActivity : AppCompatActivity() {
     lateinit var navController: NavController

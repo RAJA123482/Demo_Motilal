@@ -7,7 +7,6 @@ import androidx.room.RoomDatabase
 import com.example.demo_motilal.AppConstants
 import com.example.demo_motilal.data.dao.ReposDao
 import com.example.demo_motilal.data.models.Repos
-import java.util.concurrent.locks.Lock
 
 @Database(
     entities = [Repos::class],
