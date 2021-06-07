@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/srl_details">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.RepositoryDetailsFragment">
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:src="@drawable/img_details"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:background="#000000"
+            android:alpha=".4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="24dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_img"
+            tools:text="Name - Java"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000000"
+            android:alpha=".4"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"/>
+
+        <TextView
+            android:id="@+id/tv_full_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="24dp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+            tools:text="Full Name - Java"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000000"
+            android:alpha=".4"
+            app:layout_constraintTop_toBottomOf="@+id/tv_full_name"/>
+
+        <TextView
+            android:id="@+id/tv_lamguage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="24dp"
+            android:textSize="14sp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_full_name"
+            tools:text="Language used - Java"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000000"
+            android:alpha=".4"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lamguage"/>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="24dp"
+            android:textSize="14sp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lamguage"
+            tools:text="Description - Java is a object oriented paradigm"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000000"
+            android:alpha=".4"
+            app:layout_constraintTop_toBottomOf="@+id/tv_description"/>
+
+        <TextView
+            android:id="@+id/tv_create_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="24dp"
+            android:textSize="14sp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_description"
+            tools:text="Created On - 06 Jun 2021"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000000"
+            android:alpha=".4"
+            app:layout_constraintTop_toBottomOf="@+id/tv_create_date"/>
+
+        <TextView
+            android:id="@+id/tv_update_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="24dp"
+            android:textSize="14sp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_create_date"
+            tools:text="Updated On - 06 Jun 2021"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000000"
+            android:alpha=".4"
+            app:layout_constraintTop_toBottomOf="@+id/tv_update_date"/>
+
+        <TextView
+            android:id="@+id/tv_star_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="24dp"
+            android:textSize="14sp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_update_date"
+            tools:text="Stargazers count - 112233"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000000"
+            android:alpha=".4"
+            app:layout_constraintTop_toBottomOf="@+id/tv_star_count"/>
+
+        <TextView
+            android:id="@+id/tv_watcher_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="24dp"
+            android:textSize="14sp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_star_count"
+            tools:text="Watchers count - 112233"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000000"
+            android:alpha=".4"
+            app:layout_constraintTop_toBottomOf="@+id/tv_watcher_count"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

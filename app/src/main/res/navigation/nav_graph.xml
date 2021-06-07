@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/trendingRepositories">
+
+    <fragment
+        android:id="@+id/trendingRepositories"
+        android:name="com.example.demo_motilal.ui.fragment.TrendingRepositoriesFragment"
+        android:label="Trending Repositories"
+        tools:layout="@layout/fragment_trending_repositories">
+        <action
+            android:id="@+id/gotoDetails"
+            app:destination="@id/repositoryDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/repositoryDetails"
+        android:name="com.example.demo_motilal.ui.fragment.RepositoryDetailsFragment"
+        android:label="Repository Details"
+        tools:layout="@layout/fragment_repository_details" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>
